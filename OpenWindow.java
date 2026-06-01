@@ -5,10 +5,11 @@ import java.awt.event.ActionListener;
 
 public class OpenWindow implements ActionListener{
     JFrame frame = new JFrame();
-    JButton button = new JButton("test");
+    JButton button = new JButton("add new window");
 
+    //this be a constructor method
     public OpenWindow(){
-        button.setBounds(300, 300, 500, 500);
+        button.setBounds(300, 300, 100, 100);
         button.setFocusable(false);
         button.addActionListener(this);
 
