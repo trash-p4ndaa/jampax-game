@@ -1,0 +1,9 @@
+- add a window (done)
+
+- in the first window add ground and a temp object
+
+- add border walls so the object cant move away from view
+    - this is to test movement
+    - after the object is confirmed to move remove the walls and when the object moves past the window border open a diff open
+
+- add keyboard inputs to the object so it moves
