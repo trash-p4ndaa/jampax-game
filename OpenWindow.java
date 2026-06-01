@@ -9,13 +9,13 @@ public class OpenWindow implements ActionListener{
 
     //this be a constructor method
     public OpenWindow(){
-        button.setBounds(300, 300, 100, 100);
+        button.setBounds(50, 75, 50, 50);
         button.setFocusable(false);
         button.addActionListener(this);
 
         frame.add(button);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 600);
+        frame.setSize(100, 150);
         frame.setLayout(null);
         frame.setVisible(true);
     }
