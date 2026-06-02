@@ -1,5 +1,7 @@
 - add a window (done)
 
+- highkey watch a youtube tutorial on 2d games
+
 - in the first window add ground and a temp object
 
 - add border walls so the object cant move away from view
