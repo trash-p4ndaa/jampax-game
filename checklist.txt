@@ -1,4 +1,4 @@
-- add a window (done)
+- add a window
 
 - highkey watch a youtube tutorial on 2d games
 
