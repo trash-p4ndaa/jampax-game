@@ -1,10 +1,13 @@
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class Player {
+public class Player extends Main{
     int direction = 1;
     int gravity = 1;
-    int x, y, vx, vy;
+    int border_y = 100;
+    int x = game.player.x, y = game.player.y, vx, vy;
+    double dt = 0.5;
+    boolean on_ground = true;
 
     int height = 50, width = 50;
 
@@ -26,6 +29,15 @@ public class Player {
         //if player is on the ground,
         //make them go up vertically
         //then implement gravity so they go down
+        while(on_ground){
+            do{
+                y+=vy;
+            }while(y<border_y);
+        }
+
+        if(!on_ground){
+            y-=gravity;
+        }
     }
 
     //'listens' for which key is pressed
