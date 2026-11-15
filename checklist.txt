@@ -1,4 +1,4 @@
-- add a window, specify the resolution
+- add a window, specify the resolution (DONE)
 
 - in the first window add ground and a temp object
 
@@ -6,4 +6,4 @@
     - this is to test movement
     - after the object is confirmed to move remove the walls and when the object moves past the window border open a diff open
 
-- add keyboard inputs to the object so it moves
+- add keyboard inputs to the object so it moves (DONE)
