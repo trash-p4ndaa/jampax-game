@@ -3,13 +3,19 @@ import java.awt.event.KeyListener;
 
 public class Player {
     int direction = 1;
+    int gravity = 1;
+    int x, y, vx, vy;
+
+    int height = 50, width = 50;
 
     public void moveLeft(){
         direction = -1;
+        x -= vx;
     }
 
     public void moveRight(){
         direction = 1;
+        x += vx;
     }
 
     public void updatePosition(){
@@ -28,10 +34,13 @@ public class Player {
         int key = k.getKeyCode();
 
         if (key == KeyEvent.VK_A || key == KeyEvent.VK_LEFT) {
+            vx = 3;
             moveLeft();
         } else if (key == KeyEvent.VK_D || key == KeyEvent.VK_RIGHT) {
+            vx = 3;
             moveRight();
         } else if (key == KeyEvent.VK_SPACE || key == KeyEvent.VK_UP) {
+            vy = 3;
             jump();
         }
     }
